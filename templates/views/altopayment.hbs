@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+<title>Payment</title> 
+<body> 
+    <div style="margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;">
+    <h3>Welcome to Payment Gateway</h3> 
+    <form action="/altopayment" method="POST"> 
+    <script
+        src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="{{key}}"
+        data-amount="150000" 
+        data-currency="inr" 
+        data-name="{{name}}" 
+        data-description="Alto  car Booking for a day" 
+        data-locale="auto" > 
+        </script> 
+    </form> 
+    </div>
+</body> 
+</html>

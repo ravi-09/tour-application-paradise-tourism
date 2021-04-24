@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reset Password-Paradise Tourism</title>
+    <link rel="icon" href="images/kerela/travel.png" sizes="16x16 32x32" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="section container " style="margin-top:3rem">
+        <div class="container" style="margin:auto">
+    <div class="row " style="background-color:#FBFCF7;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius:5rem; height:600px;width:500px;display: block;
+ margin:auto" >
+
+           
+                          <div class="row-lg-8 row-xl-6">
+                            <div class="offset-left-xl-35">
+                                
+                                 <div class="login-wrapper" style="margin:auto">
+                            <div class="brand-wrapper">
+                        <img src="images/kerela/travel.png" alt="logo" class="travel">
+                    </div>
+                        <h1 class="login-title">Reset</h1>
+                        <h6 style="color:red;text-align:center;">{{errormsg}}</h6>
+                        <form action="/reset" method="POST">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="enter your new passsword" required minlength="8"oncopy="return false">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="password">Confirm Password</label>
+                                <input type="password" name="cpassword" id="password" class="form-control" placeholder="Confirm your passsword" required minlength="8" onpaste="return false" >
+                            </div>
+
+                            <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Reset">
+                        </form>
+                        
+                    </div>
+                              </div>
+                              </div>  
+                              </div>
+                          </div>
+                         
+                           
+                          </section>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+   
+</body>
+
+</html>

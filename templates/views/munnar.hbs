@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Munnar</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="/images/kerela/travel.png" sizes="16x16 32x32" type="image/png">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    
+    <div class="page">
+
+
+       
+        <section class="breadcrumbs-custom-inset">
+            <div class="breadcrumbs-custom context-dark bg-overlay-60">
+                <div class="container">
+                    <h2 class="breadcrumbs-custom-title">Munnar</h2>
+                    <ul class="breadcrumbs-custom-path">
+                        <li>Indian hill town with Nallathanni tea museum, waterfalls & Eravikulam National Park.</li>
+
+                    </ul>
+
+                </div>
+                <div class="box-position" style="background-image: url(images/kerela/munnar/breadcrumbs.jpg);"></div>
+            </div>
+        </section>
+
+        <section class="section section-sm section-last bg-default text-left">
+            <div class="container">
+                <div class="row row-60 row-md-80 row-lg-90">
+                    <div class="col-lg-8 col-xl-6">
+                        <h3>Weather Forecasting</h3>
+                        <br>
+                        <br>
+                        <div>
+                            <div class="row row-sm row-30">
+                                <div class="col-lg-8">
+                                    <ul class="list-inline list-inline-md rd-navbar-corporate-contacts">
+                                        <li>
+                                            <div class="unit unit-spacing-xs">
+                                                <div class="unit-left">
+                                                    <span class="icon" id="status">
+                                                        </span>
+                                                </div>
+                                                <div class="unit-body">
+                                                    <h5>Today</h5>
+                                                    <br>
+                                                    <h4 id="tdtemp"></h4>
+                                                    <p>Wind:-<span id="tdwind"></span></p>
+                                                    <p>Latitude:-<span id="lat"></span></p>
+                                                    <p>Longitude:-<span id="long"></span></p>
+                                                    <p>Status:-<span id="cond1"></span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-inline list-inline-md rd-navbar-corporate-contacts">
+                                        <li>
+                                            <div class="unit unit-spacing-xs">
+                                                <div class="unit-left">
+                                                    <span class="icon" id="status2"></span>
+                                                        <br> <h5><strong>Tommorow</strong></h5>
+                                                        
+                                                        <h6 id="totemp"><span></span></h6>
+                                                        <p style="color: black;">Wind:-<span id="towind"></span></p>
+                                                        <p style="color: black;">Status:-<span id="cond"></span></p>
+                                                    
+                                                </div>
+                                            </div>
+                                            </li>
+                                            <li>
+                                                
+                                                    <div class="unit unit-spacing-xs">
+                                                     <div class="unit-left">   
+                                                        <span class="icon" id="status3"></span>
+                                                        <br> <span><h5><strong id="day1"></strong></h5>
+                                                        
+                                                        <h6 id="temp3"><span></span></h6>
+                                                        <p style="color: black;">Wind:-<span id="wind3"></span></p>
+                                                        <p style="color: black;">Status:-<span id="cond2"></span></p>
+                                                        </span>
+                                                        </div>
+                                                    </div>
+                                                    </li>
+                                                
+                                                <li>
+                                                <div class="unit unit-spacing-xs">
+                                                    <div class="unit-left">
+                                                        <span class="icon" id="status4"></span>
+                                                        <br><span> <h5><strong><span id="day2"></span><span id="month2"></span></strong></h5>
+                                                        
+                                                        <h6 id="temp4"><span></span></h6>
+                                                        <p style="color: black;">Wind:-<span id="wind4"></span></p>
+                                                        <p style="color: black;">Status:-<span id="cond3"></span></p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                </li>
+                                                <li>
+                                                <div class="unit unit-spacing-xs">
+                                                    <div class="unit-left">
+                                                        <span class="icon" id="status5"></span>
+                                                        <br><span><h5><strong><span id="day3"></span><span id="month3"></span></strong></h5>
+                                                        
+                                                        <h6 id="temp5"><span></span></h6>
+                                                        <p style="color: black;">Wind:-<span id="wind5"></span></p>
+                                                        <p style="color: black;">Status:-<span id="cond4"></span></p>
+                                                        
+                                                        </span>   
+                                                    </div>
+                                                </div>
+                                                </li>
+                                           
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="offset-left-xl-65">
+                            <h3>Covid-19 Cases</h3>
+                            <br>
+                            <br>
+                            <div>
+                                <ul class="list-inline list-inline-md rd-navbar-corporate-contacts">
+                                    <li>
+                                        <div class="unit unit-spacing-xs">
+                                            <div class="unit-left">
+                                                <span class="icon"><img src="images/kerela/active 2.png" height="120" width="120">
+                                                    </span>
+                                            </div>
+                                            <div class="unit-body">
+                                                <h5>Active</h5>
+                                                <br>
+                                                <h4 id="active"></h4>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    <li>
+                                        <div class="unit unit-spacing-xs">
+                                            <div class="unit-left"><span class="icon"><img src="images/kerela/recover.png"height="120" width="120"> </span></div>
+                                            <div class="unit-body">
+
+                                                <h5 style="color:green;">Recovered</h5>
+                                                <br>
+                                                <h4 id="recover"></h4>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="unit unit-spacing-xs">
+                                            <div class="unit-left"><span class="icon"><img src="images/kerela/red-skull.png"height="120" width="120"></span></div>
+                                            <div class="unit-body">
+                                                &nbsp;
+                                                <h5 style="color:red;">Death</h5>
+                                                <br>
+                                                <h4 id="death"></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     <section class="section section-lg section-top-1 bg-gray-4">
+             <h3>Top sights</h3><span></span></div>
+            <div class="container offset-negative-1">
+                <div class="box-categories cta-box-wrap">
+                    <div class="box-categories-content">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li>
+                                        
+                                        
+                                        <div class="card" style="width: 20rem; height:40rem;">
+                                        <a href="/park">
+                                        <img class="card-img-top" src="images/kerela/munnar/park/p1.jpg" alt=""  width="368" height="500" data-toggle="tooltip" data-placement="top" title="Click here to see more photos"></a>
+                                        
+                                        <div class="card-body">
+                                            
+                                            <a class="link-location " href="/munnarpark" >
+                                           <h6>Eravikulam National Park</h6></a>
+                                            
+                                            
+                                            <a class="product-big-reviews" href="/munnarpark"><p><strong>{{avgreview}} <span class="far fa-star" style="color:yellow"></span> by {{persons}} customers reviews</strong></p></a>
+                                            <p class="card-text"><b>Views & wild goats in a lush setting.</b></p>
+                                           Eravikulam National Park is a 97 km² national park located along the Western Ghats in the Idukki district of Kerala in India. 
+                                           Situated between 10&deg;05'N and 10&deg;20' north, and 77&deg;0' and 77&deg;10' east, it is the first national park in Kerala.
+                                           <p><a href="/munnarpark"><span style="color: blue;"><ins>Click Here</ins></span></a><span><strong>To read more </strong></span> </p>
+
+                                        </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li>
+                                        
+                                        
+                                        <div class="card" style="width: 20rem; height:40rem">
+                                        <a href="/dam">
+                                        <img class="card-img-top" src="images/kerela/munnar/dam/p1.jpeg" alt=""  width="368" height="420" data-toggle="tooltip" data-placement="top" title="Click here to see more photos"></a>
+                                        
+                                        <div class="card-body">
+                                            
+                                            <a class="link-location" href="/munnardam ">
+                                           <h6>Mattupetty Dam</h6></a>
+                                            
+                                            
+                                            <a class="product-big-reviews" href="/munnardam"><p><strong>{{zooavgreview}} <span class="far fa-star" style="color:yellow"></span> by {{zoopersons}} customers reviews</strong></p></a>
+                                            <p class="card-text"><b>Dam in a picturesque area with animals.</b></p>
+                                           Mattupetty Dam, near Munnar in Idukki District, is a storage Concrete Gravity dam built in the mountains of Kerala, India to conserve water for hydroelectricity. 
+                                           It has been a vital source of power yielding along with other such dams, huge revenue to the states.
+                                            <p><a href="/munnardam"><span style="color: blue;"><ins>Click Here</ins></span></a><span><strong>To read more </strong></span> </p>                               </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li>
+                                        
+                                        
+                                        <div class="card" style="width: 20rem; height:40rem;">
+                                        <a href="/tea_museum">
+                                        <img class="card-img-top" src="images/kerela/munnar/tea/p1.jpg" alt=""  width="368" height="420"data-toggle="tooltip" data-placement="top" title="Click here to see more photos"></a>
+                                        
+                                        <div class="card-body">
+                                            
+                                            <a class="link-location" href="/munnartea" >
+                                           <h6>Tea Museum</h6></a>
+                                            
+                                            
+                                            <a class="product-big-reviews" href="/munnartea"><p><strong>{{beachavgreview}} <span class="far fa-star" style="color:yellow"></span> by {{beachpersons}} customers reviews</strong></p></a>
+                                            <p class="card-text"><b>Tea-related exhibits & memorabilia.</b></p>
+                                           The KDHP Tea Museum is an industry and history museum situated in Munnar, a town in the Idukki district of Kerala in South India. 
+                                           Tata Tea Museum is its official name, but it's also known as Nalluthanni Estate where it is located, or Kannan Devan Hills Plantation Tea Museum.
+                                             
+                                            
+                                            <p><a href="/munnartea"><span style="color: blue;"><ins>Click Here</ins></span></a><span><strong>To read more </strong></span> </p>                                </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 wow fadeInDown col-10" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                   <li>
+                                        
+                                        <br>
+                                        <div class="card" style="width: 20rem; height:37rem;">
+                                        <a href="/mountain">
+                                        <img class="card-img-top" src="images/kerela/munnar/hill/p1.jpg" alt=""  width="368" height="420" data-toggle="tooltip" data-placement="top" title="Click here to see more photos"></a>
+                                        
+                                        <div class="card-body">
+                                            
+                                            <a class="link-location" href="/munnarana" >
+                                           <h6>Anamudi</h6></a>
+                                            
+                                            
+                                            <a class="product-big-reviews" href="/munnarana"><p><strong>{{lightavgreview}} <span class="far fa-star" style="color:yellow"></span> by {{lightpersons}} customers reviews</strong></p></a>
+                                            <p class="card-text"><b>Landmark peak with hiking & elephants.</b></p>
+                                            Anamudi is a mountain located in the Indian state of Kerala. 
+                                            It is the highest peak in the Western Ghats and South India, at an elevation of 2,695 metres and a topographic prominence of 2,479 metres.  
+                                            
+                                            <p><a href="/munnarana"><span style="color: blue;"><ins>Click Here</ins></span></a><span><strong>To read more </strong></span> </p>                       
+                                        </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 wow fadeInDown col-10" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li>
+                                        
+                                        <br>
+                                        <div class="card" style="width: 20rem; height:37rem; ">
+                                        <a href="/waterfall">
+                                        <img class="card-img-top" src="images/kerela/munnar/falls/p1.jpg" alt=""  width="368" height="420" data-toggle="tooltip" data-placement="top" title="Click here to see more photos"></a>
+                                        
+                                        <div class="card-body">
+                                            
+                                            <a class="link-location" href="/munnarwater">
+                                           <h6>Attukad Waterfalls</h6></a>
+                                            
+                                            
+                                            <a class="product-big-reviews" href="/munnarwater"><p><strong>{{lightavgreview}} <span class="far fa-star" style="color:yellow"></span> by {{latinpersons}} customers reviews</strong></p></a>
+                                            <p class="card-text"><b>Small waterfalls & lush, hilly terrain.</b></p>
+                                            Attukad waterfalls, located between Munnar and Pallivasal, is noted for its long trekking route. 
+                                            Attukad captures one's attention for its endless trails and makes it an undisputable part of every trekking enthusiast's bucket list.
+                                            <p><a href="/munnarwater"><span style="color: blue;"><ins>Click Here</ins></span></a><span><strong>To read more </strong></span> </p>
+                                        </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                               <div class="col-md-4 wow fadeInDown col-10" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li>
+                                        
+                                        <br>
+                                        <div class="card" style="width: 20rem; height:37rem;">
+                                        <a href="/peak">
+                                        
+                                        <img class="card-img-top" src="images/kerela/munnar/peak/p1.jpg" alt=""  width="368" height="420" data-toggle="tooltip" data-placement="top" title="Click here to see more photos"></a>
+                                        
+                                        <div class="card-body">
+                                            
+                                            <a class="link-location" href="/munnarpeak" >
+                                           <h6>Chokramudi Peak</h6></a>
+                                            
+                                            
+                                            <a class="product-big-reviews" href="/munnarpeak"><p><strong>{{tempavgreview}} <span class="far fa-star" style="color:yellow"></span> by {{temppersons}} customers reviews</strong></p></a>
+                                            <p class="card-text"><b>Hikes to a summit with sweeping views.</b></p>
+                                           Chokramudi Peak is a mountain peak in Munnar, Kerala. Situated between Bison Valley and Munnar, it is one of the highest peaks of Munnar and among the best places of trekking in Munnar.
+                                           Situated at an altitude of around 7,200 feet in Eravikulam National Park .
+                                           <p><a href="/munnarpeak"><span style="color: blue;"><ins>Click Here</ins></span></a><span><strong>To read more </strong></span> </p>
+                                        </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div class="link-classic wow fadeInUp">
+            
+    <!-- Owl Carousel-->
+    </div>
+    </section>
+
+
+
+
+        
+
+    </div>
+    </section>
+
+
+
+    <!-- Page Footer-->
+    <footer class="section footer-corporate context-dark ">
+        <div class="footer-corporate-inset ">
+            <div class="container ">
+                <div class="row row-40 justify-content-lg-between ">
+                    <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4 ">
+                        <div class="oh-desktop ">
+                            <div class="wow slideInRight " data-wow-delay="0s ">
+                                <h6 class="text-spacing-100 text-uppercase ">Contact us</h6>
+                                <ul class="footer-contacts d-inline-block d-sm-block ">
+                                    <li>
+                                        <div class="unit ">
+                                            <div class="unit-left "><span class="icon fa fa-phone "></span></div>
+                                            <div class="unit-body "><a class="link-phone " href="tel:+91 7004460371 ">+91 7004460371</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit ">
+                                            <div class="unit-left "><span class="icon fa fa-envelope "></span></div>
+                                            <div class="unit-body "><a class="link-aemail " href="mailto:gravi0970p@gmail.com ">gravi0970p@gmail.com</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit ">
+                                            <div class="unit-left "><span class="icon fa fa-location-arrow "></span></div>
+                                            <div class="unit-body "><a class="link-location " href="https://www.google.co.in/maps/place/Silicon+Institute+of+Technology/@21.5797911,84.0436307,17z/data=!3m1!4b1!4m5!3m4!1s0x3a211a68e0107a59:0x29b1fa9dcb161615!8m2!3d21.5797911!4d84.0458194">
+                                            Silicon Institute Of Technology, Sambalpur</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4 ">
+                        <div class="oh-desktop ">
+                            <div class="wow slideInDown " data-wow-delay="0s ">
+                                <h6 class="text-spacing-100 text-uppercase ">Follow Us on</h6>
+                                <!-- Post Minimal 2-->
+                                 <ul class="footer-contacts d-inline-block d-sm-block ">
+                                    <li>
+                                        <div class="unit ">
+
+                                            <div class="unit-body ">
+                                                <a class="icon fa fa-facebook " href="https://m.facebook.com/Paradise-tourism-105243188376916/ " target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit ">
+
+                                            <div class="unit-body ">
+                                                <a class="icon fa fa-twitter " href="https://twitter.com/ParadiseTouris1" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit ">
+
+                                            <div class="unit-body ">
+                                                <a class="icon fa fa-instagram " href="https://www.instagram.com/paradisetourism_kerala/" target="_blank"></a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4 ">
+                        <div class="oh-desktop ">
+                            <div class="wow slideInLeft " data-wow-delay="0s ">
+                                <h6 class="text-spacing-100 text-uppercase ">Quick links</h6>
+                                <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2 ">
+                                    <li><a href="/about ">About us</a></li>
+                                    <li><a href="/home">Home</a></li>
+                                    <li><a href="/triu">Trivandrum</a></li>
+                                    <li><a href="/alleppey">Alappuzha</a></li>
+                                    <li><a href="/kochi">Kochi</a></li>
+                                    <li><a href="/wayanad">Wayanad</a></li>
+                                    <li><a href="/logout">Log Out</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+   
+    <!-- Javascript-->
+    <script type="text/javascript">
+        
+        const status1=document.getElementById("status1");
+        const tdtemp=document.getElementById("tdtemp");
+        const tdwind=document.getElementById("tdwind");
+        const lat=document.getElementById("lat");
+        const long=document.getElementById("long");
+        const totemp=document.getElementById("totemp");
+        const towind=document.getElementById("towind");
+        const temp3=document.getElementById("temp3");
+        const wind3=document.getElementById("wind3");
+        const temp4=document.getElementById("temp4");
+        const wind4=document.getElementById("wind4");
+        const temp5=document.getElementById("temp5");
+        const wind5=document.getElementById("wind5");
+        const status=document.getElementById('status');
+        const status2=document.getElementById('status2');
+        const status3=document.getElementById('status3');
+        const status4=document.getElementById('status4');
+        const status5=document.getElementById('status5');
+        const cond=document.getElementById('cond');
+        const cond1=document.getElementById('cond1');
+        const cond2=document.getElementById('cond2');
+        const cond3=document.getElementById('cond3');
+        const cond4=document.getElementById('cond4');
+
+        
+        
+        // fetching weather api 
+        const getinfo= async()=>{
+
+        
+        try {
+            let url = `http://api.openweathermap.org/data/2.5/forecast?q=Munnar&units=metric&appid=64e53f3da0c5f89dc45bd9f155c2db2f`
+            const response = await fetch(url);
+            const data = await response.json();
+            const arrdata = [data];
+            tdtemp.innerHTML = arrdata[0].list[0].main.temp + "&deg;C";
+            tdwind.innerHTML=arrdata[0].list[0].wind.speed+"km/h";
+            lat.innerText = arrdata[0].city.coord.lat;
+            long.innerText = arrdata[0].city.coord.lon;
+            tempstatus=arrdata[0].list[0].weather[0].main;
+            cond1.innerHTML=tempstatus;
+            totemp.innerHTML=arrdata[0].list[8].main.temp+ "&deg;C";
+            towind.innerText=arrdata[0].list[8].wind.speed+"km/h";
+            tempstatus2=arrdata[0].list[8].weather[0].main;
+            cond.innerHTML=tempstatus2;
+            temp3.innerHTML=arrdata[0].list[16].main.feels_like+ "&deg;C";
+            wind3.innerHTML=arrdata[0].list[16].wind.speed+"km/h";
+            tempstatus3=arrdata[0].list[16].weather[0].main;
+            cond2.innerHTML=tempstatus3;
+            temp4.innerHTML=arrdata[0].list[24].main.temp+ "&deg;C";
+            wind4.innerHTML=arrdata[0].list[24].wind.speed+"km/h";
+            tempstatus4=arrdata[0].list[24].weather[0].main;
+            cond3.innerHTML=tempstatus4;
+            temp5.innerHTML=arrdata[0].list[32].main.temp+ "&deg;C";
+            wind5.innerHTML=arrdata[0].list[32].wind.speed+"km/h";
+            tempstatus5=arrdata[0].list[32].weather[0].main;
+            cond4.innerHTML=tempstatus5;
+            if (tempstatus == "Sunny") {
+                status.innerHTML = "<img src='images/kerela/sun.png' height='150' width='150'>";
+            } else if (tempstatus == "Clear") {
+                status.innerHTML = "<img src='images/kerela/sun.png' height='150' width='150'>";
+            } else if (tempstatus == "Clouds") {
+                status.innerHTML = "<img src='images/kerela/blackcloud.png' height='200' width='200'>";
+            } else if (tempstatus == "Rain") {
+                status.innerHTML = "<img src='images/kerela/rain2.png' height='300' width='300'>";
+            } else if (tempstatus == "Haze") {
+                status.innerHTML = "<img src='images/kerela/slide1.png' height='300' width='300'>";
+            } else {
+                status.innerHTML = "<img src='images/kerela/cloud3.png' height='300' width='300'>";
+            }
+            if (tempstatus2 == "Sunny") {
+                status2.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus2 == "Clear") {
+                status2.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus2 == "Clouds") {
+                status2.innerHTML = "<img src='images/kerela/blackcloud.png' height='150' width='150'>";
+            } else if (tempstatus2 == "Rain") {
+                status2.innerHTML = "<img src='images/kerela/rain2.png' height='100' width='100'>";
+            } else if (tempstatus2 == "Haze") {
+                status2.innerHTML = "<img src='images/kerela/slide1.png' height='80' width='80'>";
+            } else {
+                status2.innerHTML = "<img src='images/kerela/cloud3.png' height='120' width='120'>";
+            }
+            if (tempstatus3 == "Sunny") {
+                status3.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus3 == "Clear") {
+                status3.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus3 == "Clouds") {
+                status3.innerHTML = "<img src='images/kerela/blackcloud.png' height='150' width='150'>";
+            } else if (tempstatus3 == "Rain") {
+                status3.innerHTML = "<img src='images/kerela/rain2.png' height='100' width='100'>";
+            } else if (tempstatus3 == "Haze") {
+                status3.innerHTML = "<img src='images/kerela/slide1.png' height='80' width='80'>";
+            } else {
+                status3.innerHTML = "<img src='images/kerela/cloud3.png' height='120' width='120'>";
+            }
+            if (tempstatus4 == "Sunny") {
+                status4.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus4 == "Clear") {
+                status4.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus4 == "Clouds") {
+                status4.innerHTML = "<img src='images/kerela/blackcloud.png' height='150' width='150'>";
+            } else if (tempstatus4 == "Rain") {
+                status4.innerHTML = "<img src='images/kerela/rain2.png' height='100' width='100'>";
+            } else if (tempstatus4 == "Haze") {
+                status4.innerHTML = "<img src='images/kerela/slide1.png' height='80' width='80'>";
+            } else {
+                status4.innerHTML = "<img src='images/kerela/cloud3.png' height='120' width='120'>";
+            }
+            if (tempstatus5 == "Sunny") {
+                status5.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus5 == "Clear") {
+                status5.innerHTML = "<img src='images/kerela/sun.png' height='90' width='90'>";
+            } else if (tempstatus5 == "Clouds") {
+                status5.innerHTML = "<img src='images/kerela/blackcloud.png' height='150' width='150'>";
+            } else if (tempstatus5 == "Rain") {
+                status5.innerHTML = "<img src='images/kerela/rain2.png' height='100' width='100'>";
+            } else if (tempstatus5 == "Haze") {
+                status5.innerHTML = "<img src='images/kerela/slide1.png' height='80' width='80'>";
+            } else {
+                status5.innerHTML = "<img src='images/kerela/cloud3.png' height='120' width='120'>";
+            }
+
+        }catch {
+            console.log("err");
+        }
+        }
+        getinfo();
+         const active = document.getElementById("active");
+            const recover = document.getElementById("recover");
+            const death = document.getElementById("death");
+            //covid 19 fetch
+            const getcovid= async()=>{
+            try {
+            let url = `https://api.covid19india.org/state_district_wise.json`
+            const response = await fetch(url);
+            const data = await response.json();
+            const arrdata = [data];
+            active.innerHTML =arrdata[0].Kerala.districtData.Idukki.active;
+            recover.innerHTML=arrdata[0].Kerala.districtData.Idukki.recovered;
+            death.innerText = arrdata[0].Kerala.districtData.Idukki.deceased;
+            
+            
+           
+        } 
+        catch {
+            console.log("err");
+        }
+        }
+        getcovid();
+         const day1 = document.getElementById("day1");
+        
+        const day2 = document.getElementById("day2");
+        
+        const day3 = document.getElementById("day3");
+        var today = new Date(); //Today's Date
+        var month = [
+            "Jan",
+            "Feb",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "Sept",
+            "Oct",
+            "Nov",
+            "Dec",
+
+        ]
+        var requiredDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 2);
+        day1.innerHTML = requiredDate.getDate() + " " + month[requiredDate.getMonth()];
+
+        var requiredDate2 = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 3);
+        day2.innerHTML = requiredDate2.getDate() + " " + month[requiredDate2.getMonth()];
+
+        var requiredDate3= new Date(today.getFullYear(), today.getMonth(), today.getDate() + 4);
+        day3.innerHTML = requiredDate3.getDate() + " " + month[requiredDate3.getMonth()];
+    </script>
+    <script type="text/javascript">
+        </script>
+        <script>
+           
+
+        </script>
+    <script src="js/core.min.js "></script>
+    <script src="js/script.js "></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--weather-->
+    
+</body>
+
+
+</html>
