@@ -503,7 +503,7 @@
 
         
         try {
-            let url = `http://api.openweathermap.org/data/2.5/forecast?q=Thiruvananthapuram&units=metric&appid=64e53f3da0c5f89dc45bd9f155c2db2f`
+            let url = `https://api.openweathermap.org/data/2.5/forecast?q=Thiruvananthapuram&units=metric&appid=64e53f3da0c5f89dc45bd9f155c2db2f`
             const response = await fetch(url);
             const data = await response.json();
             const arrdata = [data];
@@ -600,8 +600,7 @@
         }
         }
          getinfo();
-         </script>
-         {{!-- <script>
+        
          const active = document.getElementById("active");
             const recover = document.getElementById("recover");
             const death = document.getElementById("death");
@@ -620,7 +619,7 @@
            
         } 
         catch {
-            console.log("err");
+            console.log(err);
         }
         }
         getcovid();
@@ -653,8 +652,8 @@
 
         var requiredDate3= new Date(today.getFullYear(), today.getMonth(), today.getDate() + 4);
         day3.innerHTML = requiredDate3.getDate() + " " + month[requiredDate3.getMonth()];
-    </script>
-     --}}
+    
+     </script>
     <script src="js/core.min.js "></script>
     <script src="js/script.js "></script>
     <script>
