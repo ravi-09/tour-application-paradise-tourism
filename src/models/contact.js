@@ -20,7 +20,7 @@ const contactusSchema = new mongoose.Schema({
         type: Number,
         required: true,
         minlength: 10,
-        unique: true
+
     },
     message: {
         type: String,
