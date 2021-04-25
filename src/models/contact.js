@@ -19,7 +19,7 @@ const contactusSchema = new mongoose.Schema({
     phone: {
         type: Number,
         required: true,
-        minlength: 10,
+        minlength: 9,
 
     },
     message: {
