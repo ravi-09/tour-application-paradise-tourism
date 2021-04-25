@@ -192,9 +192,9 @@ app.get("/about", auth, (req, res) => {
     res.render("about", { name: username });
 });
 app.get("/car_rent", (req, res) => {
-    username = req.user.name;
 
-    res.render("car_rent", { name: username });
+
+    res.render("car_rent");
 });
 app.get('/translator', auth, (req, res) => {
     username = req.user.name;
