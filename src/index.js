@@ -191,10 +191,11 @@ app.get("/about", auth, (req, res) => {
 
     res.render("about", { name: username });
 });
-app.get("/car_rent", (req, res) => {
+app.get("/car_rent", auth, (req, res) => {
+    username = req.user.name;
 
 
-    res.render("car_rent");
+    res.render("car_rent", { name: username });
 });
 app.get('/translator', auth, (req, res) => {
     username = req.user.name;
@@ -1903,8 +1904,8 @@ app.post("/wayanadwaterfalls", auth, async(req, res) => {
         res.status(500).send(err);
     }
 });
-var Publishable_Key = process.env.PUBLISHABLE_KEY;
-var Secret_Key = process.env.SECRET_KEY;
+var Publishable_Key = "pk_test_51IjKttSHRkFQtbuD9bjehZdw0Bmg0rkiEaRTFJvXBBRNeiyBtaqnVUEft5hJl91uWlHGP2JkCruwsDul5cvI7bzo00AyD7WEU3";
+var Secret_Key = "sk_test_51IjKttSHRkFQtbuDew2zxU7eQa10hqpfvN79koGuetL3hYpuNkCUw89C1Po1Edye7aEKLIDcLY4wBSsv4psns3BS00mbSxNTMQ";
 const stripe = require('stripe')(Secret_Key)
 app.get("/payment", auth, (req, res) => {
 
