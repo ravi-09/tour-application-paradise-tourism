@@ -493,7 +493,7 @@
 
         
         try {
-            let url = `http://api.openweathermap.org/data/2.5/forecast?q=Munnar&units=metric&appid=64e53f3da0c5f89dc45bd9f155c2db2f`
+            let url = `https://api.openweathermap.org/data/2.5/forecast?q=Munnar&units=metric&appid=64e53f3da0c5f89dc45bd9f155c2db2f`
             const response = await fetch(url);
             const data = await response.json();
             const arrdata = [data];
